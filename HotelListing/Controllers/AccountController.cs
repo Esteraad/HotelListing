@@ -59,7 +59,6 @@ namespace HotelListing.Controllers
             catch (Exception ex) {
                 _logger.LogError(ex, $"Something went wrong int the {nameof(Register)}");
                 return Problem($"Something went wrong int the {nameof(Register)}", statusCode: 500);
-                throw;
             }
         }
 
@@ -85,7 +84,6 @@ namespace HotelListing.Controllers
             catch (Exception ex) {
                 _logger.LogError(ex, $"Something went wrong int the {nameof(Login)}");
                 return Problem($"Something went wrong int the {nameof(Login)}", statusCode: 500);
-                throw;
             }
         }
     }
